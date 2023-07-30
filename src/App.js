@@ -6,6 +6,7 @@ import Skills from "./pages/Skills";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,7 +15,6 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* path="*" fonctionne si jamais l'url ne correspond Ã  rien de dÃ©clarer  au dessus */}
           <Route path="*" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/competences" element={<Skills />} />
