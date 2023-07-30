@@ -1,0 +1,28 @@
+// Définition de la palette de couleurs header
+$color-1: #10002b;
+$color-2: #240046;
+$color-3: #3c096c;
+$color-4: #5a189a;
+$color-5: #7b2cbf;
+$color-6: #9d4edd;
+$color-7: #c77dff;
+$color-8: #e0aaff;
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Regular.ttf") format("truetype"),
+    url("../../assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
