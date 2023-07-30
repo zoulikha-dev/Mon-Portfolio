@@ -3,10 +3,20 @@ body {
   padding: 0;
 }
 
-.home-container {
+.background-container {
   background-image: url("../../assets/img/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+.typewriter-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 30px;
 }
