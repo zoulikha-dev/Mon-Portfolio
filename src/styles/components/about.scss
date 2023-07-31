@@ -6,14 +6,24 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: black;
+  color: $color-4;
   height: 100vh;
-  padding: 10%;
+  padding: 100px;
   font-size: 20px;
 }
 
 .photo {
+  margin-top: 40px;
   border-radius: 50%;
   width: 100px;
   height: auto;
+}
+
+h1 {
+  padding: 10px;
+  font-size: 45px;
+}
+
+p {
+  font-size: 18px;
 }
