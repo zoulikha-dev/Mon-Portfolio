@@ -1,0 +1,19 @@
+@import "../pages/settings.scss";
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  height: 100vh;
+  padding: 10%;
+  font-size: 20px;
+}
+
+.photo {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+}
