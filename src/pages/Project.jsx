@@ -22,6 +22,7 @@ const Project = () => {
   }, []);
 
   const firstProject = projets && projets.length > 0 ? projets[0] : null;
+  const secondProject = projets && projets.length > 1 ? projets[1] : null;
 
   return (
     <div className="project-container">
@@ -71,8 +72,51 @@ const Project = () => {
             </div>
           )}
         </div>
+        {/* ----------------------- PROJET NUMÉRO 2 -------------------------------------- */}
 
         <img src={kasa} alt="kasa" className="img-kasa" />
+
+        <div className="projet-details">
+          {secondProject && (
+            <div>
+              <h2>{secondProject.titre}</h2>
+              <p>{secondProject.description}</p>
+              {/* liste des compétences */}
+              <div className="competences-container">
+                <h3>Langages utilisés</h3>
+                <ul className="competence-ul">
+                  {/* Utilisation de la méthode map pour parcourir le tableau des compétences */}
+                  {secondProject.competences.map((competence, index) => (
+                    // Utilisation de la clé unique "index" pour chaque élément de la liste
+                    <li className="competence-li" key={competence + index}>
+                      {competence}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {/* icone lien site */}
+              <h4 className="title-lien">Lien du site et du GitHub</h4>
+              <div className="lien-icons">
+                <a
+                  href={secondProject.lienSite}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGlobe className="icon-globe" />
+                </a>
+                {/* icone lien github */}
+                <a
+                  href={secondProject.lienGitHub}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="icon-github" />
+                </a>
+              </div>
+              {/* fin icones */}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
