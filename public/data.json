@@ -1,0 +1,17 @@
+[
+    {
+        "titre": "Intégration Front-end pour Booki : Agence de Voyage",
+        "description": "J'ai réalisé le développement et de l'intégration front-end d'une agence de voyage, en m'appuyant sur une maquette créée avec Figma. Mon rôle central consistait à concevoir une interface conviviale et fonctionnelle en utilisant les langages HTML et CSS. J'ai veillé à ce que le site soit pleinement responsive et fidèle à l'identité visuelle de Booki. Le projet a été réalisé en respectant les meilleures pratiques de développement web, et j'ai utilisé Git pour versionner mon travail. L'application finale est entièrement responsive, ce qui garantit une expérience utilisateur homogène sur l'ensemble des appareils et navigateurs.",
+        "lienSite": "https://zoulikha-dev.github.io/Projet_2_ELHADRI_Zoulikha/#marseille",
+        "lienGitHub": "https://github.com/zoulikha-dev/Projet_2_ELHADRI_Zoulikha",
+        "competences": ["HTML", "CSS"]
+    },
+
+    {
+        "titre": "Kasa : Application Web de Location Immobilière avec React",
+        "description": "J'ai réalisé le développement front-end d'une application web de location immobilière. En m'appuyant sur des maquettes conçues avec Figma, j'ai créé une interface fonctionnelle et conviviale en utilisant React et CSS. J'ai intégré un carrousel pour la galerie d'images, offrant aux utilisateurs une expérience fluide et interactive lors du défilement des photos des logements. De plus, j'ai mis en place des animations CSS pour les Collapse, permettant aux utilisateurs d'ouvrir et de fermer les sections avec élégance. Le site est entièrement responsive, s'adaptant de manière optimale à tous les appareils. Ce projet m'a permis de me familiariser avec React et de développer de nouvelles compétences dans ce framework JavaScript.",
+        "lienSite": "",
+        "lienGitHub": "https://github.com/zoulikha-dev/kasa-app",
+        "competences": ["REACT","JAVASCRIPT", "CSS"]
+    }
+]
