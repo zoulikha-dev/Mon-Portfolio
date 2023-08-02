@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/components/header.scss";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -9,40 +9,31 @@ const Header = () => {
       <nav>
         <div className="navigation">
           <ul>
-            <NavLink
-              to="/"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              <li>Accueil</li>
-            </NavLink>
-
-            <NavLink
-              to="/presentation"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              <li>Présentation</li>
-            </NavLink>
-
-            <NavLink
-              to="/competences"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              <li>Compétences</li>
-            </NavLink>
-
-            <NavLink
-              to="/portfolio"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              <li>Portfolio</li>
-            </NavLink>
-
-            <NavLink
-              to="/contact"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              <li>Contact</li>
-            </NavLink>
+            <li>
+              <Link to="accueil" smooth={true} duration={500}>
+                Accueil
+              </Link>
+            </li>
+            <li>
+              <Link to="presentation" smooth={true} duration={500}>
+                Présentation
+              </Link>
+            </li>
+            <li>
+              <Link to="competences" smooth={true} duration={500}>
+                Compétences
+              </Link>
+            </li>
+            <li>
+              <Link to="portfolio" smooth={true} duration={500}>
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" smooth={true} duration={500}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
