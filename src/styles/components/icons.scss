@@ -1,0 +1,17 @@
+@import "../pages/settings.scss";
+
+.icons {
+  display: flex;
+  gap: 25px;
+}
+
+.icon-git,
+.icon-mail,
+.icon-link {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  :hover {
+    color: $color-8;
+  }
+}
