@@ -1,3 +1,5 @@
+@import "../pages/settings.scss";
+
 body {
   margin: 0;
   padding: 0;
@@ -30,4 +32,215 @@ body {
 .subtitle {
   font-family: "Poppins-Regular" sans-serif;
   font-size: 45px;
+  color: white;
+  margin: 0;
 }
+
+// ------------- Présentation -------------
+
+.about-container {
+  margin: 20px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $color-4;
+  font-size: 20px;
+}
+
+.about-container h2 {
+  margin: 70px 0 70px 0;
+}
+
+.photo {
+  margin-top: 105px;
+  border-radius: 50%;
+  border: 1px solid $color-4;
+  padding: 5px;
+  width: 100px;
+  height: auto;
+}
+
+p {
+  font-size: 18px;
+  max-width: 80%;
+  margin: 10px auto;
+  color: #343a40;
+}
+
+.presentation-icons .icon-git,
+.presentation-icons .icon-mail,
+.presentation-icons .icon-link {
+  margin-top: 80px;
+  width: 33px;
+  height: 33px;
+}
+
+.icons-presentation .icon-git,
+.icons-presentation .icon-mail,
+.icons-presentation .icon-link {
+  color: $color-4;
+}
+
+// ----------------------- Compétences --------------------
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-container h2 {
+  margin: 100px 0 70px 0;
+}
+
+.skills-container p {
+  width: 80%;
+}
+
+.skills-title {
+  text-align: center;
+}
+
+.icon-skills {
+  text-align: center;
+}
+
+.icon-html,
+.icon-css,
+.icon-sass,
+.icon-js,
+.icon-react,
+.icon-nodejs,
+.icon-github1 {
+  width: 60px;
+  height: 60px;
+  margin-right: 50px;
+}
+
+.first-icon {
+  margin-bottom: 70px;
+}
+
+.icon-sass {
+  color: #cd6799;
+}
+.icon-html {
+  color: #ff5733;
+}
+.icon-css {
+  color: #0000ff;
+}
+.icon-js {
+  color: #f0db4f;
+}
+.icon-react {
+  color: #61dbfb;
+}
+.icon-nodejs {
+  color: #3c873a;
+  margin: 50px 0 50px 0;
+}
+
+.icon-github1 {
+  margin: 50px 0 50px 0;
+}
+
+// -------------------------- Portfolio -------------------------
+
+.project-container {
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 100px 0 70px 0;
+}
+
+.img-container {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.img-booki,
+.img-kasa {
+  border: 1px solid $color-8;
+  border-radius: 20px;
+  width: 400px;
+  height: 350px;
+}
+
+.projet-details {
+  color: $color-4;
+  text-align: center;
+}
+
+.projet-details h2 {
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.projet-details p {
+  color: #343a40;
+  font-size: 18px;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lien-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+.icon-github,
+.icon-globe {
+  border: 1.5px solid $color-4;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 2.5px;
+  width: 40px;
+  height: 40px;
+  color: $color-4;
+  cursor: pointer;
+  :hover {
+    color: $color-8;
+  }
+}
+
+.title-lien {
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.competences-container h3 {
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.competence-ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.competence-li {
+  border: 1px solid $color-6;
+  border-radius: 20px;
+  padding: 0 25px;
+  color: $color-6;
+}
+
+// ------------------------------- Contact ------------------------
