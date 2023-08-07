@@ -26,13 +26,18 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.img-modal-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .img-modal {
-  min-width: 350px;
-  height: 300px;
+  max-width: 450px;
   object-fit: cover;
   border: 1.5px solid $color-8;
   border-radius: 10px;
-  margin: 0 30px;
+  margin: 100px 30px;
 }
 
 .btn-open:hover {
@@ -85,7 +90,7 @@
   color: #343a40;
   font-family: "Poppins-Bold", sans-serif;
   font-size: 25px;
-  margin: 50px 0 20px 0;
+  margin: 50px 0 35px 0;
 }
 
 .projet-details ul {
