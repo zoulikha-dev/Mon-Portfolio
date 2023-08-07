@@ -15,12 +15,19 @@ import {
 import { useState, useEffect } from "react";
 import booki from "../assets/img/booki1.png";
 import kasa from "../assets/img/kasa.png";
+import bluel from "../assets/img/bluel.webp";
+import nina from "../assets/img/nina.png";
 import bookiModal from "../assets/img/Mobile.png";
-import bookiModal2 from "../assets/img/Tablette.webp";
+import bookiModal2 from "../assets/img/Desktop.png";
 import kasaModal from "../assets/img/D_Home1.webp";
 import kasaModal2 from "../assets/img/D_Fiche-Logement.webp";
+import bluelModal from "../assets/img/Homepage-bluel.png";
+import bluelModal2 from "../assets/img/Loginbluel.png";
+import ninaModal from "../assets/img/nina1.png";
+import ninaModal2 from "../assets/img/nina2.png";
 import Icons from "../components/Icons";
 import Modalcomponent from "../components/Modalcomponent";
+import { Link } from "react-scroll";
 
 const Home = () => {
   // Déclaration du state projets pour stocker les donées du fichier JSON
@@ -40,6 +47,8 @@ const Home = () => {
 
   const firstProject = projets && projets.length > 0 ? projets[0] : null;
   const secondProject = projets && projets.length > 1 ? projets[1] : null;
+  const thirdProject = projets && projets.length > 2 ? projets[2] : null;
+  const fourthProject = projets && projets.length > 3 ? projets[3] : null;
 
   return (
     <>
@@ -67,9 +76,9 @@ const Home = () => {
               </h2>
             </div>
             <div className="arrow-container">
-              <a href="#portfolio">
+              <Link to="portfolio" smooth={true} duration={800}>
                 <FaChevronDown className="fade" />
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -162,13 +171,52 @@ const Home = () => {
                 {secondProject && (
                   <Modalcomponent
                     titleModal={secondProject.titre}
-                    imageModal={kasaModal}
-                    imageModal2={kasaModal2}
                     description={secondProject.description}
                     title2={secondProject.sousTitre}
                     title3={secondProject.sousTitre2}
                     competences={secondProject.competences}
                     lienGitHub={secondProject.lienGitHub}
+                    imageModal={kasaModal}
+                    imageModal2={kasaModal2}
+                  />
+                )}
+              </div>
+            </div>
+
+            <div className="container-bis">
+              <img src={bluel} alt="bluel" className="img-bluel" />
+              <div className="modal">
+                {thirdProject && (
+                  <Modalcomponent
+                    titleModal={thirdProject.titre}
+                    description={thirdProject.description}
+                    title2={thirdProject.sousTitre}
+                    title3={thirdProject.sousTitre2}
+                    competences={thirdProject.competences}
+                    lienGitHub={thirdProject.lienGitHub}
+                    imageModal={bluelModal}
+                    imageModal2={bluelModal2}
+                  />
+                )}
+              </div>
+            </div>
+
+            <div className="container-bis">
+              <img src={nina} alt="bluel" className="img-bluel" />
+              <div className="modal">
+                {fourthProject && (
+                  <Modalcomponent
+                    titleModal={fourthProject.titre}
+                    description={fourthProject.description}
+                    title2={fourthProject.sousTitre}
+                    title3={fourthProject.sousTitre2}
+                    competences={fourthProject.competences}
+                    lienSite={fourthProject.lienSite}
+                    lienGitHub={fourthProject.lienGitHub}
+                    title4={fourthProject.sousTitre3}
+                    pdfLink={fourthProject.pdf}
+                    imageModal={ninaModal}
+                    imageModal2={ninaModal2}
                   />
                 )}
               </div>
