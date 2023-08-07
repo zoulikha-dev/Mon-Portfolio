@@ -13,6 +13,8 @@ const Modalcomponent = ({
   lienSite,
   lienGitHub,
   competences,
+  title4,
+  pdfLink,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -37,8 +39,6 @@ const Modalcomponent = ({
       >
         <h3>{titleModal}</h3>
         <p>{description}</p>
-        <img src={imageModal} alt="maquette" className="img-modal" />
-        <img src={imageModal2} alt="maquette" className="img-modal" />
         <h4>{title2}</h4>
         <ul>
           {competences.map((competence, index) => (
@@ -56,9 +56,21 @@ const Modalcomponent = ({
             <FaGithub className="icon-github" />
           </a>
         )}
+        {/* Condition pour afficher le titre4 et le pdf si il est défini */}
+        {title4 && <h4>{title4}</h4>}
+        {pdfLink && (
+          <a href={pdfLink} target="_blank" rel="noopener noreferrer">
+            Télécharger le rapport d'intervention (PDF)
+          </a>
+        )}
+        {/* fin de la condition du pdf et titre4 */}
         <button onClick={CloseModal} className="btn-close">
           <FaTimes />
         </button>
+        <div className="img-modal-container">
+          <img src={imageModal} alt="maquette" className="img-modal" />
+          <img src={imageModal2} alt="maquette" className="img-modal" />
+        </div>
       </Modal>
     </div>
   );
