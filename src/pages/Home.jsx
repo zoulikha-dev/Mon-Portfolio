@@ -76,7 +76,7 @@ const Home = () => {
               </h2>
             </div>
             <div className="arrow-container">
-              <Link to="portfolio" smooth={true} duration={800}>
+              <Link to="portfolio" smooth={true} duration={500}>
                 <FaChevronDown className="fade" />
               </Link>
             </div>
@@ -84,7 +84,7 @@ const Home = () => {
         </section>
         {/* --------------------------- Présentation ---------------------------------- */}
         <section id="presentation" className="about-container">
-          <img src={photo} alt="Ma photo" className="photo" />
+          <img src={photo} alt="Moi" className="photo" />
           <h2>Présentation</h2>
           <p>
             Passionnée par le développement web, j'ai décidé de me former chez
