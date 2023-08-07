@@ -1,0 +1,113 @@
+@import "../pages/settings.scss";
+
+.modal-custom {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 20px;
+  width: 70%;
+  height: 80%;
+  overflow-y: auto;
+  z-index: 1001;
+}
+
+.btn-open {
+  position: absolute;
+  color: $color-4;
+  border: 1px solid $color-8;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.img-modal {
+  min-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border: 1.5px solid $color-8;
+  border-radius: 10px;
+  margin: 0 30px;
+}
+
+.btn-open:hover {
+  background-color: $color-4;
+  color: white;
+}
+
+.projet-details {
+  color: $color-4;
+  text-align: center;
+}
+
+.projet-details h3 {
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 30px;
+  margin: 50px 0;
+}
+
+.projet-details p {
+  color: #343a40;
+  font-size: 18px;
+  max-width: 85%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.lien-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+.icon-github,
+.icon-globe {
+  border: 1.5px solid $color-4;
+  border-radius: 50%;
+  margin: 0 50px;
+  padding: 2.5px;
+  width: 40px;
+  height: 40px;
+  color: $color-4;
+  cursor: pointer;
+  :hover {
+    color: $color-8;
+  }
+}
+
+.projet-details h4 {
+  color: #343a40;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 25px;
+  margin: 50px 0 20px 0;
+}
+
+.projet-details ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.projet-details li {
+  border: 1px solid $color-6;
+  border-radius: 20px;
+  padding: 0 25px;
+  color: $color-6;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: $color-4;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
