@@ -202,7 +202,7 @@ const Home = () => {
             </div>
 
             <div className="container-bis">
-              <img src={nina} alt="bluel" className="img-bluel" />
+              <img src={nina} alt="nina" className="img-nina" />
               <div className="modal">
                 {fourthProject && (
                   <Modalcomponent
