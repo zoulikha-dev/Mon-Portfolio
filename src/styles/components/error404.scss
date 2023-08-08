@@ -1,0 +1,66 @@
+@import "../pages/settings.scss";
+
+h1 {
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 142.6%;
+  color: $color-4;
+  text-align: center;
+  margin-top: 277px;
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 142.6%;
+  color: $color-4;
+  text-align: center;
+  margin-top: 66px;
+  margin-bottom: 0;
+}
+
+.lien-accueil {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  text-align: center;
+  text-decoration: underline;
+  color: $color-4;
+  margin-top: 182px;
+  margin-bottom: 160px;
+}
+
+/* Responsive Tablettes */
+@media (min-width: 769px) and (max-width: 992px) {
+  h3 {
+    font-size: 150px;
+    margin-top: 220px;
+  }
+  p {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+  .lien-accueil {
+    font-size: 16px;
+    margin-top: 145px;
+    margin-bottom: 235px;
+  }
+}
+
+/* Responsive Mobile */
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 96px;
+    margin-top: 195px;
+  }
+  p {
+    font-size: 18px;
+    margin-top: 11px;
+  }
+  .lien-accueil {
+    font-size: 14px;
+    margin-top: 133px;
+    margin-bottom: 235px;
+  }
+}
