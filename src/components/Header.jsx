@@ -61,7 +61,7 @@ const Header = () => {
                 duration={500}
                 onClick={closeNavbar}
               >
-                Portfolio
+                Projets
               </Link>
             </li>
             <li>
