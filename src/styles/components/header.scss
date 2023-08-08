@@ -43,3 +43,68 @@ nav {
     border-bottom: 4px solid #bd68ee;
   }
 }
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 35px;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+/* Responsive Tablettes */
+@media (min-width: 769px) and (max-width: 992px) {
+  .navigation ul {
+    gap: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+      to right,
+      $color-8,
+      $color-7,
+      $color-6,
+      $color-5,
+      $color-4,
+      $color-3,
+      $color-2,
+      $color-1
+    );
+    gap: 10px;
+    transform: translateY(-100vh);
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+}
