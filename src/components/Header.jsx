@@ -66,7 +66,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="contact"
+                to="footer"
                 smooth={true}
                 duration={500}
                 onClick={closeNavbar}
