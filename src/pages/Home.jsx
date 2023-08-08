@@ -230,7 +230,7 @@ const Home = () => {
           <h2>N'hésitez pas à me contacter</h2>
           <form action="#">
             <div className="input-container">
-              <label for="name">Nom</label>
+              <label htmlFor="name">Nom</label>
               <input
                 type="text"
                 id="name"
@@ -238,7 +238,7 @@ const Home = () => {
                 placeholder="Nom"
                 required
               />
-              <label for="email">Adresse e-mail</label>
+              <label htmlFor="email">Adresse e-mail</label>
               <input
                 type="email"
                 id="email"
@@ -246,7 +246,7 @@ const Home = () => {
                 placeholder="Adresse e-mail"
                 required
               />
-              <label for="message">Votre message</label>
+              <label htmlFor="message">Votre message</label>
               <textarea
                 name="message"
                 id="message"
