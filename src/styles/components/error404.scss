@@ -1,6 +1,6 @@
 @import "../pages/settings.scss";
 
-h1 {
+.error-title {
   font-weight: 700;
   font-size: 288px;
   line-height: 142.6%;
@@ -10,7 +10,7 @@ h1 {
   margin-bottom: 0;
 }
 
-p {
+.error {
   font-weight: 500;
   font-size: 36px;
   line-height: 142.6%;
@@ -33,11 +33,11 @@ p {
 
 /* Responsive Tablettes */
 @media (min-width: 769px) and (max-width: 992px) {
-  h3 {
+  .error-title {
     font-size: 150px;
     margin-top: 220px;
   }
-  p {
+  .error {
     font-size: 26px;
     margin-top: 30px;
   }
@@ -50,11 +50,11 @@ p {
 
 /* Responsive Mobile */
 @media screen and (max-width: 768px) {
-  h3 {
+  .error-title {
     font-size: 96px;
     margin-top: 195px;
   }
-  p {
+  .error {
     font-size: 18px;
     margin-top: 11px;
   }
