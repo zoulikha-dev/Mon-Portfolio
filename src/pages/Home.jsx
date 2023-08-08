@@ -28,6 +28,7 @@ import ninaModal2 from "../assets/img/nina2.png";
 import Icons from "../components/Icons";
 import Modalcomponent from "../components/Modalcomponent";
 import { Link } from "react-scroll";
+import Header from "../components/Header";
 
 const Home = () => {
   // Déclaration du state projets pour stocker les donées du fichier JSON
@@ -52,6 +53,7 @@ const Home = () => {
 
   return (
     <>
+      <Header />
       <main>
         {/* ------------------------- Accueil ------------------------------- */}
         <section id="accueil" className="background-container">
@@ -222,44 +224,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
-
-        {/* ------------------------------ Contact -------------------------- */}
-
-        <section className="contact">
-          <h2>N'hésitez pas à me contacter</h2>
-          <form action="#">
-            <div className="input-container">
-              <label htmlFor="name">Nom</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Nom"
-                required
-              />
-              <label htmlFor="email">Adresse e-mail</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Adresse e-mail"
-                required
-              />
-              <label htmlFor="message">Votre message</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Votre message"
-                required
-              ></textarea>
-              <button type="submit" className="btn-contacter">
-                Me contacter
-              </button>
-            </div>
-          </form>
         </section>
       </main>
     </>
