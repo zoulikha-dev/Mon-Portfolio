@@ -54,6 +54,7 @@ body {
   font-size: 2em;
   font-weight: 100;
   color: $color-8;
+  cursor: pointer;
 }
 
 @keyframes fade {
@@ -212,6 +213,7 @@ p {
   border: 1px solid $color-8;
   border-radius: 20px;
   flex-basis: calc(33.33% - 100%);
+  width: 300px;
   height: 250px;
   object-fit: cover;
   transition: background-color 0.3s ease;
@@ -267,4 +269,199 @@ textarea {
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+/* Responsive pour enlever la loupe */
+@media screen and (min-width: 992px) {
+}
+
+/* Responsive Tablettes */
+@media (min-width: 769px) and (max-width: 992px) {
+  .title-main {
+    font-size: 35px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .fade {
+    font-size: 1.5em;
+  }
+
+  // Présentation --------------------------
+  .photo {
+    width: 75px;
+  }
+  .about-container h2 {
+    margin: 50px 0;
+    font-size: 38px;
+  }
+  p {
+    font-size: 15px;
+  }
+
+  // Compétences -----------------------
+  .skills-container h2 {
+    margin: 50px 0;
+    font-size: 38px;
+  }
+  .presentation-icons .icon-git,
+  .presentation-icons .icon-mail,
+  .presentation-icons .icon-link {
+    margin-top: 40px;
+    width: 30px;
+    height: 30px;
+  }
+  .icon-nodejs {
+    margin: 10px 0;
+  }
+  .icon-github1 {
+    margin: 10px 0;
+  }
+  .skills-container h2 {
+    margin: 50px 0;
+  }
+  .first-icon {
+    margin-bottom: 30px;
+  }
+  .icon-html,
+  .icon-css,
+  .icon-sass,
+  .icon-js,
+  .icon-react,
+  .icon-nodejs,
+  .icon-github1 {
+    width: 45px;
+    height: 45px;
+    margin-right: 35px;
+  }
+  .skills-container p {
+    margin-bottom: 25px;
+  }
+
+  // Projet ---------------------------
+  .title-container {
+    margin: 50px 0;
+    font-size: 38px;
+  }
+  .img-container {
+    margin: 10px;
+    gap: 60px;
+  }
+  // Contact --------------------
+  .contact h2 {
+    margin: 50px 0;
+    font-size: 38px;
+  }
+  input {
+    width: 400px;
+  }
+
+  textarea {
+    width: 400px;
+  }
+
+  .btn-contacter {
+    width: 400px;
+    height: 35px;
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+  .title-main {
+    font-size: 25px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  .fade {
+    font-size: 1em;
+  }
+  // Présentation --------------------------
+  .photo {
+    width: 55px;
+  }
+  .about-container h2 {
+    margin: 50px 0;
+    font-size: 30px;
+  }
+  p {
+    font-size: 12px;
+  }
+  // Compétences -----------------------
+  .presentation-icons .icon-git,
+  .presentation-icons .icon-mail,
+  .presentation-icons .icon-link {
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+  }
+  .icon-nodejs {
+    margin: 10px 0;
+  }
+  .icon-github1 {
+    margin: 10px 0;
+  }
+  .skills-container h2 {
+    margin: 50px 0;
+    font-size: 30px;
+  }
+  .first-icon {
+    margin-bottom: 20px;
+  }
+  .icon-html,
+  .icon-css,
+  .icon-sass,
+  .icon-js,
+  .icon-react,
+  .icon-nodejs,
+  .icon-github1 {
+    width: 28px;
+    height: 28px;
+    margin-right: 23px;
+  }
+  .skills-container p {
+    margin-bottom: 0;
+  }
+  .about-container {
+    margin: 30px 0;
+  }
+
+  // Projet ----------------------
+  .title-container {
+    margin: 50px 0;
+    font-size: 30px;
+  }
+  .img-container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+  }
+  // Contact --------------------
+  .contact h2 {
+    margin: 50px 0;
+    font-size: 30px;
+  }
+  input {
+    font-size: 12px;
+    width: 85%;
+  }
+
+  textarea {
+    font-size: 12px;
+    width: 85%;
+    border: 0.5px solid #343a40;
+    border-radius: 5px;
+  }
+
+  .btn-contacter {
+    font-size: 12px;
+    width: 85%;
+    height: 35px;
+  }
 }

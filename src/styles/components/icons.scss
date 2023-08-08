@@ -15,3 +15,13 @@
     color: $color-8;
   }
 }
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+  .icon-git,
+  .icon-mail,
+  .icon-link {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -31,3 +31,10 @@
 .icons-color .icon-mail {
   color: white;
 }
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+  .footer-container p {
+    font-size: 13px;
+  }
+}
