@@ -4,8 +4,9 @@ import Icons from "./Icons";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
       <div className="footer-container">
+        <h2>N'hésitez pas à me contacter</h2>
         <Icons colorClass="icons-color" />
         <p>Réalisé par Zoulikha EL HADRI</p>
       </div>
