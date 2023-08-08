@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import "../styles/components/modalcomponent.scss";
 import { FaGithub, FaGlobe, FaTimes } from "react-icons/fa";
+// Configuration l'élément racine de l'application pour react-modal
+Modal.setAppElement("#root");
 
 const Modalcomponent = ({
   titleModal,
