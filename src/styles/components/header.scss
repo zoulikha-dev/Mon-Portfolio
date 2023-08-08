@@ -1,8 +1,6 @@
 @import "../pages/settings.scss";
 
 header {
-  position: fixed;
-  z-index: 1000;
   width: 100%;
   // Dégradé linéaire avec les couleurs de la palette
   background-image: linear-gradient(
@@ -75,9 +73,10 @@ header .nav-btn {
 
   header nav {
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 0;
-    height: 50%;
+    height: 80%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -101,7 +100,8 @@ header .nav-btn {
   .navigation ul {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+    padding: 0;
   }
 
   header .responsive_nav {
