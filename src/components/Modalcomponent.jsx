@@ -17,6 +17,8 @@ const Modalcomponent = ({
   competences,
   title4,
   pdfLink,
+  problematique,
+  solution,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -41,6 +43,20 @@ const Modalcomponent = ({
       >
         <h3>{titleModal}</h3>
         <p>{description}</p>
+
+        {problematique && (
+          <>
+            <h4>Problématique rencontrée</h4>
+            <p>{problematique}</p>
+          </>
+        )}
+        {solution && (
+          <>
+            <h4>Solution</h4>
+            <p>{solution}</p>
+          </>
+        )}
+
         <h4>{title2}</h4>
         <ul>
           {competences.map((competence, index) => (

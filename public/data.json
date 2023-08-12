@@ -2,6 +2,8 @@
     {
         "titre": "Intégration Front-end pour Booki : Agence de Voyage",
         "description": "J'ai réalisé le développement et de l'intégration front-end d'une agence de voyage, en m'appuyant sur une maquette créée avec Figma. Mon rôle central consistait à concevoir une interface conviviale et fonctionnelle en utilisant les langages HTML et CSS. J'ai veillé à ce que le site soit pleinement responsive et fidèle à l'identité visuelle de Booki. Le projet a été réalisé en respectant les meilleures pratiques de développement web, et j'ai utilisé Git pour versionner mon travail. L'application finale est entièrement responsive, ce qui garantit une expérience utilisateur homogène sur l'ensemble des appareils et navigateurs.",
+        "problematique": "J'ai rencontré des difficultés à comprendre et à appliquer les concepts de relations parent-enfant en CSS pour aligner et positionner les éléments de manière précise selon la maquette Figma.",
+        "solution": "J'ai approfondi mes connaissances en CSS, en particulier en ce qui concerne les propriétés de mise en page telles que display, flexbox et grid. Cela m'a permis de mieux comprendre comment aligner et positionner les éléments selon la maquette Figma, y compris en utilisant les concepts de positionnement absolu et relatif.",
         "sousTitre": "Technologies utilisées",
         "competences": ["HTML", "CSS"],
         "sousTitre2": "Lien du site et du GitHub",
@@ -13,6 +15,8 @@
     {
         "titre": "Kasa : Application Web de Location Immobilière avec React",
         "description": "J'ai réalisé le développement front-end d'une application web de location immobilière. En m'appuyant sur des maquettes conçues avec Figma, j'ai créé une interface fonctionnelle et conviviale en utilisant React et CSS. Le site est entièrement responsive, s'adaptant de manière optimale à tous les appareils. Ce projet m'a permis de me familiariser avec React.",
+        "problematique": "J'ai rencontré des difficultés lors de la mise en place du carousel d'images (Gallery) pour gérer le défilement fluide des images tout en assurant le comportement circulaire, l'affichage des boutons de navigation appropriés et la mise à jour du compteur de diapositives.",
+        "solution": "En utilisant React, j'ai implémenté un composant Carousel qui utilise l'état pour suivre l'index de l'image actuelle. J'ai créé des fonctions pour passer à la diapositive précédente et suivante en prenant en compte le passage circulaire. Des conditions ont été ajoutées pour afficher ou masquer les éléments en fonction du nombre d'images. Cela a abouti à un carousel fonctionnel permettant une navigation fluide entre les images avec un compteur de diapositives mis à jour.",
         "sousTitre": "Technologies utilisées",
         "competences": ["REACT","JAVASCRIPT", "CSS"],
         "sousTitre2": "Lien du GitHub",
@@ -22,6 +26,8 @@
     {
         "titre": "Créez une page web dynamique avec JavaScript",
         "description": "J'ai réalisé le développement d'une page web dynamique en utilisant JavaScript. Le projet consistait à créer une interface interactive et réactive en manipulant le DOM et en ajoutant des fonctionnalités dynamiques à la page. J'ai utilisé JavaScript pour rendre l'expérience utilisateur plus immersive et agréable. Le résultat est une page avec filtrage, une page de connexion sécurisée, et une modale interactive pour la gestion de projets.",
+        "problematique": "La gestion du token d'authentification pour sécuriser les fonctionnalités d'édition et de suppression des projets a été un défi complexe.",
+        "solution": "J'ai utilisé le local storage pour stocker et gérer le token, en vérifiant sa présence et sa validité pour afficher les fonctionnalités appropriées. La déconnexion a été gérée en nettoyant le local storage. Cela a assuré une sécurité optimale et une expérience utilisateur fluide.",
         "sousTitre": "Technologies utilisées",
         "competences": ["HTML", "CSS", "JAVASCRIPT"],
         "sousTitre2": "Lien du site et du GitHub",
@@ -43,4 +49,3 @@
         
     }
 ]
-

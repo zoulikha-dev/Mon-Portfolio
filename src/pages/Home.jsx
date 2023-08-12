@@ -158,6 +158,8 @@ const Home = () => {
                     imageModal={bookiModal}
                     imageModal2={bookiModal2}
                     description={firstProject.description}
+                    problematique={firstProject.problematique}
+                    solution={firstProject.solution}
                     title2={firstProject.sousTitre}
                     title3={firstProject.sousTitre2}
                     competences={firstProject.competences}
@@ -174,6 +176,8 @@ const Home = () => {
                   <Modalcomponent
                     titleModal={secondProject.titre}
                     description={secondProject.description}
+                    problematique={secondProject.problematique}
+                    solution={secondProject.solution}
                     title2={secondProject.sousTitre}
                     title3={secondProject.sousTitre2}
                     competences={secondProject.competences}
@@ -192,6 +196,8 @@ const Home = () => {
                   <Modalcomponent
                     titleModal={thirdProject.titre}
                     description={thirdProject.description}
+                    problematique={thirdProject.problematique}
+                    solution={thirdProject.solution}
                     title2={thirdProject.sousTitre}
                     title3={thirdProject.sousTitre2}
                     competences={thirdProject.competences}
